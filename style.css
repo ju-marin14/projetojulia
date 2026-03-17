@@ -1,0 +1,89 @@
+/* 1. Configurações Globais (Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020; /* Fundo escuro para destacar o card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+/* 2. Container do Anúncio */
+.ads-container {
+    background-color: #ff0000; /* Vermelho da imagem */
+    width: 95%;
+    max-width: 700px;
+    padding: 40px 20px;
+    text-align: center;
+    
+    /* Moldura Amarela/Verde Limão */
+    border-top: 15px solid #d4ff00;
+    border-bottom: 15px solid #d4ff00;
+    border-left: 12px solid #d4ff00;
+    border-right: 12px solid #d4ff00;
+    
+    position: relative;
+}
+
+/* 3. Títulos e Textos */
+h1 {
+    font-size: 1.8rem;
+    color: #000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 25px;
+    /* Sombra suave na jaqueta para dar profundidade */
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,0.4));
+}
+
+.slogan {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #000;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 4. Chamada para Ação (CTA) */
+.buy-now {
+    display: block;
+    color: #00ff00; /* Verde Neon */
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.buy-now:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.phone {
+    font-size: 1.6rem;
+    color: #000;
+    margin: 0;
+}
+
+/* 5. Ajustes para Celular */
+@media (max-width: 480px) {
+    .ads-container {
+        border-width: 8px;
+    }
+    h1 { font-size: 1.3rem; }
+    .buy-now { font-size: 1.5rem; }
+}

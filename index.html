@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Wear 360 - A Jaqueta Inteligente</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* Fundo fora do card */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Container Principal (O Card Vermelho) */
+        .ads-container {
+            background-color: #ff0000; /* Vermelho vibrante */
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            border: 15px solid #ccff00; /* Borda Amarela/Verde */
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Título Principal */
+        h1 {
+            color: #000;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        /* Imagem da Jaqueta */
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+        }
+
+        /* Texto de Slogan */
+        .slogan {
+            color: #000;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Link/Botão Compre Agora */
+        .buy-now {
+            display: block;
+            color: #00ff00; /* Verde Neon */
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-decoration: none;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px #000;
+            transition: transform 0.2s;
+        }
+
+        .buy-now:hover {
+            transform: scale(1.05);
+        }
+
+        /* Telefone */
+        .phone {
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .ads-container { border-width: 8px; padding: 20px; }
+            .buy-now { font-size: 1.5rem; }
+            .phone { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ads-container">
+        <h1>Smart Wear 360 - A Jaqueta Inteligente</h1>
+        
+        <img src="jaqueta-bomber-g-1-preto-1-e20c9ed571b6899f2217414692367249-1024-1024.webp" alt="Jaqueta Inteligente" class="product-image">
+
+        <p class="slogan">Conecte-se com o futuro, onde a tecnologia e o conforto se unem.</p>
+
+        <a href="#" class="buy-now">COMPRE AGORA!</a>
+        
+        <p class="phone">(42) 9980-5678</p>
+    </div>
+
+</body>
+</html>
